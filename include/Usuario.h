@@ -5,32 +5,32 @@
 #include <iostream>
 #include <string>
 
-using std::string;
+using std::string; 
 
 /*!
-*	\brief Representa a inst‚ncia do usuario que utiliza o sistema.
+*	\brief Representa a inst√¢ncia do usuario que utiliza o sistema.
 *	
-*	ContÈm as informaÁıes do usu·rio.
+*	Cont√©m as informa√ß√µes do usu√°rio.
 */
 class Usuario {
 private:
 	/*!
-	*	\brief Nome do usu·rio.
+	*	\brief Nome do usu√°rio.
 	*/
 	string nome;
 
 	/*!
-	*	MatrÌcula do usu·rio.
+	*	Matr√≠cula do usu√°rio.
 	*/
 	string matricula;
 	/*!
-	*	\brief Senha do usu·rio.
+	*	\brief Senha do usu√°rio.
 	*/
 	string senha;
 
 public:
 	/*!
-	*	\brief Construtor padr„o
+	*	\brief Construtor padr√£o
 	*/
 	Usuario();
 	
@@ -42,7 +42,7 @@ public:
 	Usuario(string matricula, string nome);
 
 	/*!
-	*	\brief Construtor de cÛpia.
+	*	\brief Construtor de c√≥pia.
 	*	\param user Usuario a ser copiado.
 	*/
 	Usuario(const Usuario &user);
@@ -70,13 +70,13 @@ public:
 
 	/*!
 	*	\brief Setter do atributo matricula.
-	*	\param matricula Matricula designada para inst‚ncia.
+	*	\param matricula Matricula designada para inst√¢ncia.
 	*/
 	void SetMatricula(string matricula);
 
 	/*!
 	*	\brief Setter do atributo senha.
-	*	\param senha Senha designada para inst‚ncia.
+	*	\param senha Senha designada para inst√¢ncia.
 	*/
 	void SetSenha(string senha);
 

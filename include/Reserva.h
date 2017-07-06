@@ -13,12 +13,12 @@ using std::endl;
 using std::stoi;
 
 /*!
-*	\brief Abstrai o conceito da reserva de uma sala no laboratório.
+*	\brief Abstrai o conceito da reserva de uma sala no laboratÃ³rio.
 */
 class Reserva {
 public:
 	/*!
-	*	\brief Construtor padrão.
+	*	\brief Construtor padrÃ£o.
 	*/
 	Reserva();
 
@@ -28,7 +28,7 @@ public:
 	~Reserva();
 
 	/*!
-	*	\brief Saída formatada das informações da instância da \c Reserva.
+	*	\brief SaÃ­da formatada das informaÃ§Ãµes da instÃ¢ncia da \c Reserva.
 	*/
 	void ImprimeReserva();
 
@@ -38,22 +38,22 @@ public:
 	string data;
 
 	/*!
-	*	\brief Horário reservado.
+	*	\brief HorÃ¡rio reservado.
 	*/
 	string hora;
 
 	/*!
-	*	\brief Numero do laboratório reservado.
+	*	\brief Numero do laboratÃ³rio reservado.
 	*/
 	string laboratorio;
 
 	/*!
-	*	\brief Código da reserva.
+	*	\brief CÃ³digo da reserva.
 	*/
 	string numeroReserva;
 
 	/*!
-	*	\brief Matrícula do usuário que efetuou a reserva.
+	*	\brief MatrÃ­cula do usuÃ¡rio que efetuou a reserva.
 	*/
 	string matricula;
 };

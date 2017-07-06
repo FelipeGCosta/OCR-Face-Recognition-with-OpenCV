@@ -21,19 +21,19 @@ using std::map;
 using std::vector;
 
 /*!
-*	\brief Controla requisiÁıes ao banco de dados
+*	\brief Controla requisi√ß√µes ao banco de dados
 *
-*	GerenteBD È respons·vel por promover a interface entre a camada de negÛcio
-*	e a camada de persistÍncia de dados.
+*	GerenteBD √© respons√°vel por promover a interface entre a camada de neg√≥cio
+*	e a camada de persist√™ncia de dados.
 */
 class GerenteBD
 {
 public:
 	/*!
-	*	\brief Construtor padr„o
+	*	\brief Construtor padr√£o
 	*
-	*	Na construÁ„o da inst‚ncia de \c GerenteBD È feita a leitura
-	*	dos arquivos com registros de usu·rios e registros das reservas.
+	*	Na constru√ß√£o da inst√¢ncia de \c GerenteBD √© feita a leitura
+	*	dos arquivos com registros de usu√°rios e registros das reservas.
 	*/
 	GerenteBD();
 
@@ -44,13 +44,13 @@ public:
 	
 	//CRUD Pessoa
 	/*!
-	*	\brief Insere um novo usu·rio no banco de dados.
+	*	\brief Insere um novo usu√°rio no banco de dados.
 	*	\param usuario Instancia de usuario a ser salvo no banco.
 	*/
 	static void InsereUsuario(Usuario &usuario);
 
 	/*!
-	*	\brief Busca um usu·rio no banco de dados.
+	*	\brief Busca um usu√°rio no banco de dados.
 	*
 	*	\param matricula Matricula do usuario
 	*	\return Objeto usuario com os campos preenchidos
@@ -58,12 +58,12 @@ public:
 	static Usuario BuscaUsuario(string matricula);
 	
 	/*!
-	*	\brief Atualiza um usu·rio no banco de dados.
+	*	\brief Atualiza um usu√°rio no banco de dados.
 	*/
 	void AtualizaUsuario();
 
 	/*!
-	*	\brief Remove um usu·rio do banco de dados.
+	*	\brief Remove um usu√°rio do banco de dados.
 	*/
 	void RemoveUsuario();
 
@@ -78,12 +78,12 @@ public:
 	*	\brief Verifica se a matricula confere com a senha.
 	*	\param matricula Matricula do usuario.
 	*	\param senha Senha a ser testada.
-	*	\return Sretorna true apenas se a matricula existe e est· associada ‡ senha.
+	*	\return Sretorna true apenas se a matricula existe e est√° associada √† senha.
 	*/
 	static bool ChecaUsuario(string matricula, string senha);
 
 	/*!
-	*	\brief Executa as modificaÁıes sobre usu·rio na base de dados.
+	*	\brief Executa as modifica√ß√µes sobre usu√°rio na base de dados.
 	*/
 	static void CommitUsuario();
 
@@ -91,29 +91,29 @@ public:
 	/*!
 	*	\brief Salva um novo registro de reserva.
 	*
-	*	\param matricula MatrÌcula do usu·rio que efetuou reserva.
-	*	\param reserva Objeto que contÈm as informaÁıes da reserva.
+	*	\param matricula Matr√≠cula do usu√°rio que efetuou reserva.
+	*	\param reserva Objeto que cont√©m as informa√ß√µes da reserva.
 	*/
 	static void InsereReserva(string matricula, Reserva reserva);
 
 	/*!
-	*	\brief Busca registros de reserva de acordo com o campo utilizado como critÈrio de busca.
+	*	\brief Busca registros de reserva de acordo com o campo utilizado como crit√©rio de busca.
 	*
 	*	\param entrada Valor a ser comparado na busca.
-	*	\param campo InformaÁ„o da reserva a ser levada em consideraÁ„o (data ou matricula).
-		\return Vetor de registros que respondem ‡ pesquisa.
+	*	\param campo Informa√ß√£o da reserva a ser levada em considera√ß√£o (data ou matricula).
+		\return Vetor de registros que respondem √† pesquisa.
 	*/
 	static vector<Reserva> BuscaReserva(string entrada, string campo);
 
 	/*!
 	*	\brief Cancela uma reserva.
 	*
-	*	\param numReserva CÛdigo da reserva a ser cancelada.
+	*	\param numReserva C√≥digo da reserva a ser cancelada.
 	*/
 	static void CancelaReserva(string numReserva);
 
 	/*!
-	*	\brief Executa as modificaÁıes sobre reserva na base de dados.
+	*	\brief Executa as modifica√ß√µes sobre reserva na base de dados.
 	*/
 	static void CommitReserva();
 
@@ -121,14 +121,14 @@ public:
 	*	\brief Verifica se a data informada possui reservas.
 	*
 	*	\param data Data a ser verificada.
-	*	\return \c true caso hajam reservas na data informada. \c false caso contr·rio. 
+	*	\return \c true caso hajam reservas na data informada. \c false caso contr√°rio. 
 	*/
 	static bool DataComReserva(string data);
 
 
 private:
 	/*!
-	*	\brief Contador para gerar cÛdigos de novas reservas.
+	*	\brief Contador para gerar c√≥digos de novas reservas.
 	*/
 	static int codigoReserva;
 
@@ -145,14 +145,14 @@ private:
 	/*!
 	*	\brief Mapeamento de usuarios.
 	*
-	*	O mapeamento utiliza a matrÌcula do usu·rio para obter suas informaÁıes cadastrais.
+	*	O mapeamento utiliza a matr√≠cula do usu√°rio para obter suas informa√ß√µes cadastrais.
 	*/
 	static map<string, string> dadosUsuarios;
 
 	/*!
 	*	\brief Mapeamento de registros de reservas.
 	*
-	*	O mapeamento È feito priorizando a busca por data (chave), 
+	*	O mapeamento √© feito priorizando a busca por data (chave), 
 	*	permitindo acesso aos registros de reservas daquele dia.
 	*/
 	static map<string, vector<Reserva> > dadosReservas;
