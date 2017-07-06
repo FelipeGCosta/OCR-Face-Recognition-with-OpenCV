@@ -1,6 +1,6 @@
 
 /*
-	Caso a instalação do opencv nao tenha sido
+	Caso a instalaÃ§Ã£o do opencv nao tenha sido
 	concluida, apague a linha #define OPENCV_INSTALLED
 */
 #define OPENCV_INSTALLED
@@ -27,7 +27,7 @@ using cv::WINDOW_NORMAL;
 
 
 
-//Função para teste de comunicação com opencv
+//FunÃ§Ã£o para teste de comunicaÃ§Ã£o com opencv
 #ifdef OPENCV_INSTALLED
 void lennaTest();
 #endif

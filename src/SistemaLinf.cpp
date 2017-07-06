@@ -42,7 +42,7 @@ void SistemaLinf::_EfetuaLogin() {
 			mySleep(2000);
 		}
 	}
-	else {//usuario n„o cadastrado
+	else {//usuario n√£o cadastrado
 		cout << "Usuario nao cadastrado" << endl;
 		string resposta;
 		while (true)
@@ -169,7 +169,7 @@ void SistemaLinf::_ReservarLab() {
 void SistemaLinf::_ImprimeReservas(vector<Reserva> reservas) {
 	if (reservas.size() != 0){
 		for (unsigned int i = 0; i < reservas.size(); i++) {
-			//cout << reservas[i]; //por algum motivo n„o quer funcionar direito
+			//cout << reservas[i]; //por algum motivo n√£o quer funcionar direito
 			reservas[i].ImprimeReserva();
 		}
 	}

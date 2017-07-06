@@ -1,8 +1,10 @@
 <map id="include/Reserva.h" name="include/Reserva.h">
-<area shape="rect" id="node2" href="$GerenteBD_8h.html" title="include/GerenteBD.h" alt="" coords="163,80,305,107"/>
-<area shape="rect" id="node3" href="$SistemaLinf_8h.html" title="include/SistemaLinf.h" alt="" coords="51,155,198,181"/>
-<area shape="rect" id="node7" href="$Reserva_8cpp.html" title="src/Reserva.cpp" alt="" coords="330,80,445,107"/>
-<area shape="rect" id="node6" href="$GerenteBD_8cpp.html" title="src/GerenteBD.cpp" alt="" coords="222,155,355,181"/>
-<area shape="rect" id="node4" href="$Main_8cpp.html" title="src/Main.cpp" alt="" coords="5,229,103,256"/>
-<area shape="rect" id="node5" href="$SistemaLinf_8cpp.html" title="src/SistemaLinf.cpp" alt="" coords="127,229,264,256"/>
+<area shape="rect" id="node2" href="$GerenteBD_8h.html" title="include/GerenteBD.h" alt="" coords="223,80,365,107"/>
+<area shape="rect" id="node9" href="$Reserva_8cpp.html" title="src/Reserva.cpp" alt="" coords="389,80,508,107"/>
+<area shape="rect" id="node3" href="$GerenteLogin_8h.html" title="include/GerenteLogin.h" alt="" coords="133,155,287,181"/>
+<area shape="rect" id="node8" href="$GerenteBD_8cpp.html" title="src/GerenteBD.cpp" alt="" coords="312,155,447,181"/>
+<area shape="rect" id="node4" href="$SistemaLinf_8h.html" title="include/SistemaLinf.h" alt="" coords="51,229,198,256"/>
+<area shape="rect" id="node7" href="$GerenteLogin_8cpp.html" title="src/GerenteLogin.cpp" alt="" coords="222,229,369,256"/>
+<area shape="rect" id="node5" href="$Main_8cpp.html" title="src/Main.cpp" alt="" coords="5,304,103,331"/>
+<area shape="rect" id="node6" href="$SistemaLinf_8cpp.html" title="src/SistemaLinf.cpp" alt="" coords="127,304,266,331"/>
 </map>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['gbd',['GBD',['../classSistemaLinf.html#aa933d8319c201547026b90df75800846',1,'SistemaLinf']]],
-  ['glog',['GLog',['../classSistemaLinf.html#a142cf46cfe4daf401138840502b209ab',1,'SistemaLinf']]]
+  ['codigoreserva',['codigoReserva',['../classGerenteBD.html#a6358e9e26a2733db9b72231f0f3edf7c',1,'GerenteBD']]]
 ];

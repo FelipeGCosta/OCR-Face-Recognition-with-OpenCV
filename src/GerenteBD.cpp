@@ -27,10 +27,10 @@ GerenteBD::GerenteBD()
 		if (registro == "") break;
 		DEBUG_PRINT("Registro: " << registro);
 		aux << registro;
-		aux >> matricula;	//extraindo informações posicionais de cada registro
+		aux >> matricula;	//extraindo informaÃ§Ãµes posicionais de cada registro
 		aux >> nome;		//pode ser feito assim
 		aux >> senha;
-		dadosUsuarios[matricula] = registro;	//como por enquanto só tem o nome, fica só o nome mapeado pela matricula
+		dadosUsuarios[matricula] = registro;	//como por enquanto sÃ³ tem o nome, fica sÃ³ o nome mapeado pela matricula
 	}
 	usuarios.close();
 	for (map<string,string>::iterator it = dadosUsuarios.begin(); it != dadosUsuarios.end(); it++) {
@@ -119,7 +119,7 @@ Usuario GerenteBD::BuscaUsuario(string matricula) {
 	usuario.SetNome(nome);
 	usuario.SetSenha(senha);
 	DEBUG_PRINT("GerenteBD::BuscaUsuario() - fim");
-	return usuario;	//como por enquanto é só matricula e nome, td ok
+	return usuario;	//como por enquanto Ã© sÃ³ matricula e nome, td ok
 }
 
 bool GerenteBD::ExisteUsuario(string matricula) {
@@ -136,7 +136,7 @@ bool GerenteBD::ChecaUsuario(string matricula, string senha) {
 		string uSenha;
 		aux << it->second;
 		//descarta matricula, nome
-		aux >> uSenha; aux >> uSenha; aux >> uSenha; //a senha é o terceiro elemento da linha
+		aux >> uSenha; aux >> uSenha; aux >> uSenha; //a senha Ã© o terceiro elemento da linha
 		DEBUG_PRINT("GerenteBD::ChecaUsuario - fim");
 		if (uSenha == senha) return true;
 		else return false;

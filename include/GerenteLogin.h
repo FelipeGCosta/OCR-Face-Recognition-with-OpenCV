@@ -41,14 +41,14 @@ using namespace cv;
 //using namespace cv::face;
 
 /*!
-*	\brief Credencia o usu·rio.
+*	\brief Credencia o usu√°rio.
 *
-*	A primeira classe com quem o usu·rio ir· lidar no sistema È o GerenteLogin.
-*	Essa ser· respons·vel por validar a entrada do usu·rio no sistema. A primeira
-*	tentativa ser· requisitando a matrÌcula do usuario e tentando reconhecimento facial. 
-*	Caso falhe, o Gerente ir· possibilitar que o usu·rio insira sua matrÌcula e senha para fazer login.
+*	A primeira classe com quem o usu√°rio ir√° lidar no sistema √© o GerenteLogin.
+*	Essa ser√° respons√°vel por validar a entrada do usu√°rio no sistema. A primeira
+*	tentativa ser√° requisitando a matr√≠cula do usuario e tentando reconhecimento facial. 
+*	Caso falhe, o Gerente ir√° possibilitar que o usu√°rio insira sua matr√≠cula e senha para fazer login.
 *
-*	Uma vez credenciado, GerenteLogin gera uma inst‚ncia de Usuario que ir· existir durante a sess„o no sistema,
+*	Uma vez credenciado, GerenteLogin gera uma inst√¢ncia de Usuario que ir√° existir durante a sess√£o no sistema,
 *	encerrando-se a responsabilidade de GerenteLogin.
 */
 
@@ -56,7 +56,7 @@ class GerenteLogin
 {
 public:
 	/*!
-	*	\brief Construtor padr„o da classe.
+	*	\brief Construtor padr√£o da classe.
 	*/
 	GerenteLogin();
 	virtual ~GerenteLogin();
@@ -64,50 +64,50 @@ public:
 	/*!
 	*	\brief Passa o controle para a classe GerenteLogin.
 	*	
-	*	A tela default de inÌcio do sistema È a tela de login. Essa tela aguarda atÈ que
-	*	seja feita verificaÁ„o de um usu·rio v·lido.
+	*	A tela default de in√≠cio do sistema √© a tela de login. Essa tela aguarda at√© que
+	*	seja feita verifica√ß√£o de um usu√°rio v√°lido.
 	*
 	*/
 	void Iniciar();
 
 	/*!
-	*	\brief Gera a inst‚ncia do usu·rio que navega no sistema.
+	*	\brief Gera a inst√¢ncia do usu√°rio que navega no sistema.
 	*
-	*	O mÈtodo credencia o usu·rio tentando de duas formas:
-	*	Primeiro, tenta identificar o usu·rio pela face, utilizando algorÌtmos de
-	*	vis„o computacional providos pela biblioteca OpenCV.
-	*	Caso o reconhecimento falhe, È pedido ao usu·rio que entre com uma senha.
-	*	Nesse caso, o sistema realimenta a base de dados com novas fotos e cria a sess„o
-	*	daquele usu·rio.
+	*	O m√©todo credencia o usu√°rio tentando de duas formas:
+	*	Primeiro, tenta identificar o usu√°rio pela face, utilizando algor√≠tmos de
+	*	vis√£o computacional providos pela biblioteca OpenCV.
+	*	Caso o reconhecimento falhe, √© pedido ao usu√°rio que entre com uma senha.
+	*	Nesse caso, o sistema realimenta a base de dados com novas fotos e cria a sess√£o
+	*	daquele usu√°rio.
 	*
-	*	\param matricula MatrÌcula do usu·rio que pretende fazer acesso.
-	*	\return Inst‚ncia com informaÁıes do usu·rio
+	*	\param matricula Matr√≠cula do usu√°rio que pretende fazer acesso.
+	*	\return Inst√¢ncia com informa√ß√µes do usu√°rio
 	*/
 	Usuario Credencia(string matricula);
 
 	/*!
-	*	\brief Gera uma inst‚ncia de usu·rio.
+	*	\brief Gera uma inst√¢ncia de usu√°rio.
 	*
-	*	\param matricula MatrÌcula do usu·rio.
-	*	\return Usu·rio.
+	*	\param matricula Matr√≠cula do usu√°rio.
+	*	\return Usu√°rio.
 	*/
 	Usuario NovoUsuario(string matricula);
 	
 private:
 	/*!
-	*	\brief Faz a verificaÁ„o de usu·rio via webcam.
+	*	\brief Faz a verifica√ß√£o de usu√°rio via webcam.
 	*/
 	bool _ReconheceFace(string matricula);
 	
 	
 	void _AtualizaBancoDeFotos();
 	/*!
-	*	\brief Faz a captura de novas fotos do usu·rio via webcam.
+	*	\brief Faz a captura de novas fotos do usu√°rio via webcam.
 	*/
 	bool _CriaBancoDeFotos(string matricula);
 
 	/*!
-	*	\brief Cria arquivo de identificaÁ„o do banco de fotos
+	*	\brief Cria arquivo de identifica√ß√£o do banco de fotos
 	*/
 	void _read_csv(const string& filename, vector<Mat>& images, vector<int>& labels, char separator = ';');
 
@@ -118,7 +118,7 @@ private:
 };
 
 	/*!
-	*	\brief FunÁ„o global para atraso de 3 segundos na tela
+	*	\brief Fun√ß√£o global para atraso de 3 segundos na tela
 	*/
 	void mySleep(int);
 

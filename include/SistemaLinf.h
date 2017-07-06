@@ -15,41 +15,41 @@ using std::cin;
 
 /*!	\brief Gera ambiente onde classes se comunicam
 *
-*	As classes do sistema se comunicam no mÈtodo Run() de SistemaLinf.
+*	As classes do sistema se comunicam no m√©todo Run() de SistemaLinf.
 */
 class SistemaLinf {
 private:
 	/*!
-	*	\brief Inst‚ncia de \c GerenteLogin.
+	*	\brief Inst√¢ncia de \c GerenteLogin.
 	*/
 	GerenteLogin GLog;
 
 	/*!
-	*	\brief Inst‚ncia de \c GerenteBD.
+	*	\brief Inst√¢ncia de \c GerenteBD.
 	*/
 	GerenteBD GBD;
 
 	/*!
-	*	\brief Inst‚ncia de usu·rio que efetuou login no sistema.
+	*	\brief Inst√¢ncia de usu√°rio que efetuou login no sistema.
 	*/
 	Usuario usuarioLogado;
 
 	/*!
-	*	\brief Responsavel por resolver o login do usu·rio.
+	*	\brief Responsavel por resolver o login do usu√°rio.
 	*
 	*	O login pode ser feito via reconhecimento facial, possibilitado
-	*	pela biblioteca OpenCV. Caso o reconhecimento falhe, È exigida
-	*	senha do usu·rio.
+	*	pela biblioteca OpenCV. Caso o reconhecimento falhe, √© exigida
+	*	senha do usu√°rio.
 	*/
 	void _EfetuaLogin();
 
 	/*!
-	*	\brief Mensagem padr„o para entrada inv·lida.
+	*	\brief Mensagem padr√£o para entrada inv√°lida.
 	*/
 	void _OpcaoInvalida();
 
 	/*!
-	*	\brief Fornece os principais conjuntos de operaÁıes possiveis no sistema.
+	*	\brief Fornece os principais conjuntos de opera√ß√µes possiveis no sistema.
 	*/
 	void _NavegaConta();
 	
@@ -59,32 +59,32 @@ private:
 	void _LimpaTela();
 
 	/*!
-	*	\brief Gera o cabeÁalho principal do sistema.
+	*	\brief Gera o cabe√ßalho principal do sistema.
 	*/
 	void _Cabecalho();
 
 	/*!
-	*	\brief Acessa ·rea de modificaÁ„o de dados pessoais.
+	*	\brief Acessa √°rea de modifica√ß√£o de dados pessoais.
 	*/
 	void _EditaDadosPessoais();
 
 	/*!
-	*	\brief Acessa a ·rea de reserva de salas do laboratÛrio.
+	*	\brief Acessa a √°rea de reserva de salas do laborat√≥rio.
 	*/
 	void _ReservaLaboratorio();
 
 	/*!
-	*	\brief Faz requisiÁ„o das reservas existentes pelo usu·rio logado.
+	*	\brief Faz requisi√ß√£o das reservas existentes pelo usu√°rio logado.
 	*/
 	void _VerificaReserva();
 
 	/*!
-	*	\brief Faz requisiÁ„o para reserva de laboratÛrio.
+	*	\brief Faz requisi√ß√£o para reserva de laborat√≥rio.
 	*/
 	void _ReservarLab();
 
 	/*!
-	*	\brief Faz requisiÁ„o para cancelamento de reserva.
+	*	\brief Faz requisi√ß√£o para cancelamento de reserva.
 	*/
 	void _CancelarReserva();
 
@@ -94,12 +94,12 @@ private:
 	void _ImprimeReservas(vector<Reserva> reservas);
 public:
 	/*!
-	*	\brief Construtor padr„o.
+	*	\brief Construtor padr√£o.
 	*/
 	SistemaLinf();
 	
 	/*!
-	*	\brief Ambiente de execuÁ„o dos sistema.
+	*	\brief Ambiente de execu√ß√£o dos sistema.
 	*/
 	void Run();
 };

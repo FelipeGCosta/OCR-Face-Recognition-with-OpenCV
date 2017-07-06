@@ -1,12 +1,15 @@
 <map id="GerenteLogin::Credencia" name="GerenteLogin::Credencia">
-<area shape="rect" id="node2" href="$classGerenteBD.html#ae5b9e1254a70db28a14118a9cb7bbabb" title="Verifica a existencia de usuario. " alt="" coords="235,5,410,32"/>
-<area shape="rect" id="node3" href="$classGerenteLogin.html#a76770a88d060e2ccd461a743db71fab8" title="Faz a verificação de usuário via webcam. " alt="" coords="219,56,427,83"/>
-<area shape="rect" id="node4" href="$classGerenteBD.html#aee848e57a172b20998ada945c2d8f66a" title="Busca um usuário no banco de dados. " alt="" coords="235,107,410,133"/>
-<area shape="rect" id="node8" href="$classUsuario.html#a51b15e0008a5fa1d0da0da509aa1701e" title="Getter do atributo matricula. " alt="" coords="249,157,397,184"/>
-<area shape="rect" id="node9" href="$classUsuario.html#a39534698541ca25dca335aa79ef6e42f" title="Getter do atributo nome. " alt="" coords="258,208,387,235"/>
-<area shape="rect" id="node10" href="$classGerenteBD.html#a83307478b300f18ad530bbae7a21c5cb" title="Verifica se a matricula confere com a senha. " alt="" coords="235,259,410,285"/>
-<area shape="rect" id="node11" href="$classGerenteLogin.html#a7ba85f5a3c41ce38e996b60d2ef4eb73" title="Faz a captura de novas fotos do usuário via webcam. " alt="" coords="223,310,422,351"/>
-<area shape="rect" id="node5" href="$classUsuario.html#a120e068856b0e0a9e0db6e5a7e3c8555" title="Setter do atributo matricula. " alt="" coords="475,56,621,83"/>
-<area shape="rect" id="node6" href="$classUsuario.html#a392412fa31482a0a56fbca53d1f0bbb0" title="Setter do atributo nome. " alt="" coords="484,107,612,133"/>
-<area shape="rect" id="node7" href="$classUsuario.html#a172eab6b5e1cdd16bcf87c1ffec86917" title="Setter do atributo senha. " alt="" coords="483,157,613,184"/>
+<area shape="rect" id="node2" href="$classUsuario.html#a172eab6b5e1cdd16bcf87c1ffec86917" title="Setter do atributo senha. " alt="" coords="495,9,627,36"/>
+<area shape="rect" id="node3" href="$classGerenteBD.html#ae5b9e1254a70db28a14118a9cb7bbabb" title="Verifica a existencia de usuario. " alt="" coords="236,161,413,188"/>
+<area shape="rect" id="node4" href="$classGerenteLogin.html#a76770a88d060e2ccd461a743db71fab8" title="Faz a verificaÃ§Ã£o de usuÃ¡rio via webcam. " alt="" coords="220,212,429,239"/>
+<area shape="rect" id="node7" href="$classGerenteBD.html#aee848e57a172b20998ada945c2d8f66a" title="Busca um usuÃ¡rio no banco de dados. " alt="" coords="236,60,413,87"/>
+<area shape="rect" id="node9" href="$classUsuario.html#a392412fa31482a0a56fbca53d1f0bbb0" title="Setter do atributo nome. " alt="" coords="495,111,626,137"/>
+<area shape="rect" id="node10" href="$classUsuario.html#a51b15e0008a5fa1d0da0da509aa1701e" title="Getter do atributo matricula. " alt="" coords="250,263,399,289"/>
+<area shape="rect" id="node11" href="$classUsuario.html#a39534698541ca25dca335aa79ef6e42f" title="Getter do atributo nome. " alt="" coords="259,313,390,340"/>
+<area shape="rect" id="node12" href="$classGerenteLogin.html#a65ea8467da7e3d2edb7cdde06b057c4a" title="Oculta characters digitados. " alt="" coords="233,364,416,391"/>
+<area shape="rect" id="node13" href="$classGerenteBD.html#a83307478b300f18ad530bbae7a21c5cb" title="Verifica se a matricula confere com a senha. " alt="" coords="235,415,414,441"/>
+<area shape="rect" id="node14" href="$classGerenteLogin.html#a7ba85f5a3c41ce38e996b60d2ef4eb73" title="GerenteLogin::_AtualizaBanco\lDeFotos" alt="" coords="225,466,424,507"/>
+<area shape="rect" id="node5" href="$GerenteLogin_8cpp.html#a6079220416e9a40882f29520856d6049" title="FunÃ§Ã£o global para atraso de 3 segundos na tela. " alt="" coords="524,187,597,213"/>
+<area shape="rect" id="node6" href="$classGerenteLogin.html#ad47c6f8aa06063a5ae3085b6b4955c1e" title="Cria arquivo de identificaÃ§Ã£o do banco de fotos. " alt="" coords="477,237,644,264"/>
+<area shape="rect" id="node8" href="$classUsuario.html#a120e068856b0e0a9e0db6e5a7e3c8555" title="Setter do atributo matricula. " alt="" coords="487,60,635,87"/>
 </map>
