@@ -126,13 +126,14 @@ https://yuml.me/diagram/nofunky/activity/samples
 
 ##  Diagram de Sequência
 
-Primeiro diagrama de sequência 
-
-![Diagrama de sequencia](imagens/SequenciaLogin.png)
+Abaixo, o diagrama de sequência que representa como o sistema efetua o login de um usuário, caso este já se encontre cadastrado no banco de dados.
+![diagrama sequencia](imagens/SequenciaLogin.png)
 
 Fonte:
 
 https://www.websequencediagrams.com/
+
+O código abaixo é o gerador da versão final do diagrama de sequência.
 
 ```
 title Sequência de Login
@@ -163,13 +164,8 @@ SistemaLinf-->Usuario: usuario
 
 ##  Diagrama de Classes
 
-Primeiro diagrama de classes
-
+Este é o primeiro diagrama de classes imaginado para o sistema. Na versão final, não se viu necessidade da classe GerenteReserva, permitindo comunicação direta entre a classe Usuario e GerenteBD.
 ![diagrama simplificado de classes](imagens/diagrama_simplificado_de_classes.png)
-
-## Diagrama de Sequência 
-
-![diagrama sequencia](imagens/diagram.png)
 
 ## Screenshots 
 
