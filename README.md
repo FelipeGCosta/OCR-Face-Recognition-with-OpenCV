@@ -169,8 +169,8 @@ Este é o primeiro diagrama de classes imaginado para o sistema. Na versão fina
 
 ## Screenshots 
 
-- ![ss](imagens/ss.PNG)<br>
-- ![ss2](imagens/ss2.PNG)<br>
-- ![ss3](imagens/ss3.PNG)<br>
+- ![ss](imagens/ss.png)<br>
+- ![ss2](imagens/ss2.png)<br>
+- ![ss3](imagens/ss3.png)<br>
 - ![ss4](imagens/ss4.png)
 
