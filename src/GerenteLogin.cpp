@@ -68,7 +68,7 @@ Usuario GerenteLogin::Credencia(string matricula) {
 		DEBUG_PRINT("	Usuario cadastrado na base de dados");
 		if (_ReconheceFace(matricula)) {//reconhece o rosto
 			//reconheceu pelo rosto
-			//modifica a inst‚ncia de usuario
+			//modifica a inst√¢ncia de usuario
 			usuario = GerenteBD::BuscaUsuario(matricula);
 			DEBUG_PRINT("		Matricula: " << usuario.GetMatricula());
 			DEBUG_PRINT("		Nome: " << usuario.GetNome());
@@ -206,7 +206,7 @@ bool GerenteLogin::_ReconheceFace(string matricula) {
         } // escape
     }
 	
-	if (prediction == atoi( matricula.c_str() )) {//caso reconheÁa pelo rosto
+	if (prediction == atoi( matricula.c_str() )) {//caso reconhe√ßa pelo rosto
 		cout << "Usuario reconhecido. "<< endl;
 		mySleep(3000);
 		return true;
