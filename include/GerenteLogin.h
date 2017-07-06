@@ -3,27 +3,32 @@
 
 #include <ctime>
 #include <iostream>
-#include <sstream>
-#include <string>
-#include <sys/stat.h>
-#include <stdio.h>
+#include <ctime>
+#include <sstream>      // std::stringstream
+#include <string>       // std::string
+#include <sys/stat.h>   // mkdir
+#include <fstream>  // ler arquivo csv
+
+#include "opencv2/core/core.hpp"
+#include "opencv2/contrib/contrib.hpp"
+
+
+#include "opencv2/objdetect/objdetect.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+#include "opencv2/highgui/highgui.hpp"
+//#include "opencv2/videoio/videoio.hpp"
 
 //#include <vector>
 
+//#include "Usuario.h"
+#include "GerenteBD.h"
 
 #ifdef __linux__ 
 	#include <unistd.h>
+	#include <termios.h>
 #elif _WIN32
 	#include <windows.h>
-	#include "Usuario.h"
-	#include "GerenteBD.h"
-	#include "opencv2\objdetect\objdetect.hpp"
-	#include "opencv2\imgproc\imgproc.hpp"
-	#include "opencv2\highgui\highgui.hpp"
-	#include "opencv2\videoio\videoio.hpp"
 #endif
-
-
 
 using std::string;
 using std::cout;
@@ -32,6 +37,8 @@ using std::cin;
 using std::vector;
 
 using namespace cv;
+
+//using namespace cv::face;
 
 /*!
 *	\brief Credencia o usuário.
@@ -92,18 +99,27 @@ private:
 	*/
 	bool _ReconheceFace(string matricula);
 	
+	
+	void _AtualizaBancoDeFotos();
 	/*!
 	*	\brief Faz a captura de novas fotos do usuário via webcam.
 	*/
-	void _AtualizaBancoDeFotos();
+	bool _CriaBancoDeFotos(string matricula);
 
 	/*!
-	*	\brief Detecta face e tira foto.
+	*	\brief Cria arquivo de identificação do banco de fotos
 	*/
-	int _detectaTiraFoto(string matricula);
+	void _read_csv(const string& filename, vector<Mat>& images, vector<int>& labels, char separator = ';');
 
-	
-	void _mySleep(int);
+	/*!
+	*	\brief Oculta characters digitados
+	*/
+	string _digiteSenha();
 };
+
+	/*!
+	*	\brief Função global para atraso de 3 segundos na tela
+	*/
+	void mySleep(int);
 
 #endif

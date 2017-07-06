@@ -45,7 +45,7 @@ public:
 	*	\brief Construtor de cópia.
 	*	\param user Usuario a ser copiado.
 	*/
-	Usuario(Usuario &user);
+	Usuario(const Usuario &user);
 
 	/*!
 	*	\brief Getter do atributo nome.

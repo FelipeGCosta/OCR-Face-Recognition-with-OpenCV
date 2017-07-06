@@ -5,9 +5,9 @@
 #include <iostream>
 
 #include "GerenteLogin.h"
-#include "GerenteBD.h"
-#include "Usuario.h"
-#include "Reserva.h"
+//#include "GerenteBD.h"
+//#include "Usuario.h"
+//#include "Reserva.h"
 
 using std::cout;
 using std::endl;
