@@ -103,8 +103,7 @@ https://yuml.me/diagram/scruffy/usecase/samples
 [Professor]-(Acessar laboratório)
 [Professor]-(Criar cadastro de acesso)
 [Aluno]-(Criar cadastro de acesso)
-[Aluno]-(Acessar laboratório)
-[Funcionário]-(Criar cadastro de acesso)
+[Aluno]-(Acessar laboratório [Funcionário]-(Criar cadastro de acesso)
 [Funcionário]-(Acessar laboratório)
 [Funcionário]-(Modificar cadastro de acesso)
 [Funcionário]-(Excluir cadastro de acesso)
@@ -129,30 +128,37 @@ https://yuml.me/diagram/nofunky/activity/samples
 
 Primeiro diagrama de sequência 
 
-![Diagrama de sequencia](imagens/diagrama_sequencia.png)
+![Diagrama de sequencia](imagens/SequenciaLogin.png)
 
 Fonte:
 
 https://www.websequencediagrams.com/
 
 ```
-title Sistema Trabalho 2
-User->SGBD: informar número de matrícula
-alt Matrícula encontrada
-    SGBD->SYSTEM: retorna fotos do User
-    User->SYSTEM: captura uma foto
-    SYSTEM->User: reconhece foto
-    alt foto Não reconhecida
-        User->SYSTEM: captura foto
-        SYSTEM->SGBD: armazena nova foto
-    end
-else Matrícula não encontrada
-    SGBD->User: cadastrar_User()
-    User->SGBD: informa dados()
-    User->SYSTEM: captura fotos()
-    SYSTEM->SGBD: armazena fotos()
+title Sequência de Login
+Usuario->+SistemaLinf: EfetuaLogin()
+SistemaLinf->+GerenteLogin: CredenciaUsuario(matricula)
+GerenteLogin->+GerenteBD: ExisteUsuario(matricula)
+GerenteBD-->-GerenteLogin: bool
+alt ExisteUsuario() == true
+GerenteLogin->GerenteLogin: ReconheceFace()
+alt _ReconheceFace() == true
+GerenteLogin->+GerenteBD:BuscaUsuario(matricula)
+GerenteBD-->-GerenteLogin: usuario
+GerenteLogin-->SistemaLinf: usuario
+else
+GerenteLogin->+GerenteBD: ChecaUsuario(matricula,Senha)
+GerenteBD-->-GerenteLogin: bool
+alt ChecaUsuario() == true
+GerenteLogin->+GerenteBD: BuscaUsuario(matricula)
+GerenteBD-->-GerenteLogin: usuario
+GerenteLogin->GerenteLogin: _AtualizaBancoDeFotos()
 end
-SYSTEM->User: Validar User
+end
+GerenteLogin-->-SistemaLinf: usuario
+end
+SistemaLinf-->Usuario: usuario
+
 ```
 
 ##  Diagrama de Classes
@@ -167,8 +173,8 @@ Primeiro diagrama de classes
 
 ## Screenshots 
 
-- ![ss](imagens/ss.png)<br>
-- ![ss2](imagens/ss2.png)<br>
-- ![ss3](imagens/ss3.png)<br>
+- ![ss](imagens/ss.PNG)<br>
+- ![ss2](imagens/ss2.PNG)<br>
+- ![ss3](imagens/ss3.PNG)<br>
 - ![ss4](imagens/ss4.png)
 
