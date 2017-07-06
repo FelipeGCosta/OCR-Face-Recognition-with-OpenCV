@@ -9,14 +9,14 @@
 #include <sys/stat.h>   // mkdir
 #include <fstream>  // ler arquivo csv
 
-#include "opencv2/core.hpp"
-#include "opencv2/face.hpp"
+#include "opencv2/core/core.hpp"
+#include "opencv2/contrib/contrib.hpp"
 
 
 #include "opencv2/objdetect/objdetect.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
-#include "opencv2/videoio/videoio.hpp"
+//#include "opencv2/videoio/videoio.hpp"
 
 //#include <vector>
 
@@ -38,7 +38,7 @@ using std::vector;
 
 using namespace cv;
 
-using namespace cv::face;
+//using namespace cv::face;
 
 /*!
 *	\brief Credencia o usuário.

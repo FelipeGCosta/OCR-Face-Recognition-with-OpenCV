@@ -32,12 +32,14 @@ void SistemaLinf::_EfetuaLogin() {
 	cin >> matricula;
 	Usuario usuario(GLog.Credencia(matricula));
 	if (usuario.GetNome() != "") {//usuario cadastrado
-		if (usuario.GetSenha() != ""){
+		if (usuario.GetSenha() != "none"){
 			DEBUG_PRINT("Usuario logado com sucesso");
 			usuarioLogado = usuario;
 		} else {
 			cout << "Senha invalida!" << endl;
-			mySleep(3000);
+			usuario.SetNome("");
+			usuario.SetSenha("");
+			mySleep(2000);
 		}
 	}
 	else {//usuario não cadastrado

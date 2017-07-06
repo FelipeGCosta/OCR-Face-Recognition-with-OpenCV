@@ -62,8 +62,8 @@ Usuario GerenteLogin::NovoUsuario(string matricula) {
 Usuario GerenteLogin::Credencia(string matricula) {
 	DEBUG_PRINT("GerenteLogin::Credencia - inicio");
 	Usuario usuario;
-    usuario.SetNome("fake");
-    usuario.SetSenha("");
+    //usuario.SetNome("fake");
+    usuario.SetSenha("none");
 	if ( GerenteBD::ExisteUsuario(matricula) ) { //usuario cadastrado
 		DEBUG_PRINT("	Usuario cadastrado na base de dados");
 		if (_ReconheceFace(matricula)) {//reconhece o rosto
@@ -83,7 +83,10 @@ Usuario GerenteLogin::Credencia(string matricula) {
 				_AtualizaBancoDeFotos();
 				DEBUG_PRINT("		Matricula: " << usuario.GetMatricula());
 				DEBUG_PRINT("		Nome: " << usuario.GetNome());
-			}
+			} else {
+                usuario.SetSenha("none");
+                usuario.SetNome("none");
+            }
 			return usuario;
 		}
 	}
@@ -105,7 +108,8 @@ bool GerenteLogin::_ReconheceFace(string matricula) {
     if( !face_cascade.load( face_cascade_name ) ){ cout << "--(!)Error loading face cascade\n"; mySleep(3000); return false; };
     if( !eyes_cascade.load( eyes_cascade_name ) ){ cout << "--(!)Error loading eyes cascade\n"; mySleep(3000); return false; };
     //-- 2. Read the video stream
-    capture.open( "http://192.168.1.123:4747/mjpegfeed?640x480" );
+    //capture.open( "http://192.168.1.123:4747/mjpegfeed?640x480" );
+    capture.open( 0 );
     if ( ! capture.isOpened() ) { 
         cout << "--(!)Error opening video capture\n"; 
         mySleep(3000); return false; 
@@ -132,12 +136,13 @@ bool GerenteLogin::_ReconheceFace(string matricula) {
     // Quit if there are not enough images for this demo.
     if(images.size() <= 1) {
         string error_message = "This demo needs at least 2 images to work. Please add more images to your data set!";
-        CV_Error(Error::StsError, error_message);
+        //CV_Error(Error::StsError, error_message);
     }
     int im_width = images[0].cols;
     int im_height = images[0].rows;
     // $$$$$$$ TREINAR FACES
-    Ptr<LBPHFaceRecognizer> model = LBPHFaceRecognizer::create();
+    //Ptr<LBPHFaceRecognizer> model = LBPHFaceRecognizer::create();
+    Ptr<FaceRecognizer> model = createLBPHFaceRecognizer();
     model->train(images, labels);
 
     Mat frame;
@@ -195,7 +200,8 @@ bool GerenteLogin::_ReconheceFace(string matricula) {
         imshow( window_name, original );
         char c = (char)waitKey(10);
         if( c == 27 ) {
-            destroyAllWindows();
+            cout << "destroyWindow\n";
+            destroyWindow(window_name);
             break; 
         } // escape
     }
@@ -218,7 +224,7 @@ void GerenteLogin::_AtualizaBancoDeFotos(){
 }
 
 bool GerenteLogin::_CriaBancoDeFotos(string matricula) {
-    cout << "CRIA PASTA FOTOS\n";
+    //cout << "CRIA PASTA FOTOS\n";
 	String face_cascade_name =  "resources/haarcascade_frontalface_alt.xml";
     String eyes_cascade_name =  "resources/haarcascade_eye_tree_eyeglasses.xml";
     String path_fotos = "resources/fotos/";
@@ -236,7 +242,8 @@ bool GerenteLogin::_CriaBancoDeFotos(string matricula) {
     if( !face_cascade.load( face_cascade_name ) ){ cout << "--(!)Error loading face cascade: " << face_cascade_name << endl; mySleep(3000); return false; };
     if( !eyes_cascade.load( eyes_cascade_name ) ){ cout << "--(!)Error loading eyes cascade: " << eyes_cascade_name << endl; mySleep(3000); return false; };
     //-- 2. Read the video stream
-    capture.open( "http://192.168.1.123:4747/mjpegfeed?640x480" );
+    //capture.open( "http://192.168.1.123:4747/mjpegfeed?640x480" );
+    capture.open( 0 );
     // evita criar pasta vazia
     if ( ! capture.isOpened() ) { 
         cout << "--(!)Error opening video capture\n"; 
@@ -336,7 +343,7 @@ bool GerenteLogin::_CriaBancoDeFotos(string matricula) {
                         contador_fotos += 1;
                         cout << "Foto: " << ss.str() << endl; 
                         if (contador_fotos == 10){
-                        	destroyAllWindows();
+                        	destroyWindow(window_name);
                         	mySleep(3000);
                             cout << "Capturei 10 fotos. FIM.\n";
                             return true;
@@ -355,7 +362,7 @@ void GerenteLogin::_read_csv(const string& filename, vector<Mat>& images, vector
     std::ifstream file(filename.c_str(), ifstream::in);
     if (!file) {
         string error_message = "No valid input file was given, please check the given filename.";
-        CV_Error(Error::StsBadArg, error_message);
+        //CV_Error(Error::StsBadArg, error_message);
     }
     string line, path, classlabel;
     while (getline(file, line)) {
