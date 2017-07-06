@@ -1,32 +1,37 @@
 <map id="SistemaLinf::Run" name="SistemaLinf::Run">
-<area shape="rect" id="node2" href="$classSistemaLinf.html#aaeba3f1f325e36dfc8718e1e5eee5e86" title="Responsavel por resolver o login do usuário. " alt="" coords="179,452,352,479"/>
-<area shape="rect" id="node11" href="$classUsuario.html#a51b15e0008a5fa1d0da0da509aa1701e" title="Getter do atributo matricula. " alt="" coords="951,572,1099,599"/>
-<area shape="rect" id="node19" href="$classSistemaLinf.html#a2b7a8bb723dfee53ce46e2ddfc170ad5" title="Fornece os principais conjuntos de operações possiveis no sistema. " alt="" coords="175,699,356,725"/>
-<area shape="rect" id="node3" href="$classSistemaLinf.html#ae02bf5d72ed634c919512e8c80f8ca28" title="Limpa os caracteres da tela. " alt="" coords="943,648,1107,675"/>
-<area shape="rect" id="node4" href="$classGerenteLogin.html#a5abe6312f068245a8757f46005f85faf" title="Gera a instância do usuário que navega no sistema. " alt="" coords="429,383,594,409"/>
-<area shape="rect" id="node15" href="$classGerenteLogin.html#a94bdb9e213ffdc0aa3219dad300801cb" title="Gera uma instância de usuário. " alt="" coords="422,151,601,177"/>
-<area shape="rect" id="node5" href="$classGerenteBD.html#ae5b9e1254a70db28a14118a9cb7bbabb" title="Verifica a existencia de usuario. " alt="" coords="683,252,858,279"/>
-<area shape="rect" id="node6" href="$classGerenteLogin.html#a76770a88d060e2ccd461a743db71fab8" title="Faz a verificação de usuário via webcam. " alt="" coords="667,303,875,329"/>
-<area shape="rect" id="node7" href="$classGerenteBD.html#aee848e57a172b20998ada945c2d8f66a" title="Busca um usuário no banco de dados. " alt="" coords="683,100,858,127"/>
-<area shape="rect" id="node12" href="$classUsuario.html#a39534698541ca25dca335aa79ef6e42f" title="Getter do atributo nome. " alt="" coords="960,353,1089,380"/>
-<area shape="rect" id="node13" href="$classGerenteBD.html#a83307478b300f18ad530bbae7a21c5cb" title="Verifica se a matricula confere com a senha. " alt="" coords="683,521,858,548"/>
-<area shape="rect" id="node14" href="$classGerenteLogin.html#a7ba85f5a3c41ce38e996b60d2ef4eb73" title="Faz a captura de novas fotos do usuário via webcam. " alt="" coords="671,405,870,446"/>
-<area shape="rect" id="node8" href="$classUsuario.html#a120e068856b0e0a9e0db6e5a7e3c8555" title="Setter do atributo matricula. " alt="" coords="951,68,1098,95"/>
-<area shape="rect" id="node9" href="$classUsuario.html#a392412fa31482a0a56fbca53d1f0bbb0" title="Setter do atributo nome. " alt="" coords="961,144,1089,171"/>
-<area shape="rect" id="node10" href="$classUsuario.html#a172eab6b5e1cdd16bcf87c1ffec86917" title="Setter do atributo senha. " alt="" coords="959,5,1090,32"/>
-<area shape="rect" id="node16" href="$classGerenteBD.html#a63f7f9bfe46b46806b21d5df2a8f34f0" title="Insere um novo usuário no banco de dados. " alt="" coords="684,201,857,228"/>
-<area shape="rect" id="node17" href="$classUsuario.html#a364e3001148916047ee9f74f46b89c67" title="Getter do atributo senha. " alt="" coords="959,199,1091,225"/>
-<area shape="rect" id="node18" href="$classGerenteBD.html#a1d0efdc4bad2f2224eba2b2214477a7d" title="Executa as modificações sobre usuário na base de dados. " alt="" coords="933,249,1116,276"/>
-<area shape="rect" id="node20" href="$classSistemaLinf.html#a8a6ab1c1b404f58739b2c99ef6ae95d2" title="Gera o cabeçalho principal do sistema. " alt="" coords="687,673,854,700"/>
-<area shape="rect" id="node21" href="$classSistemaLinf.html#a349a48f688ee38225cfbdd0c30484a03" title="Acessa a área de reserva de salas do laboratório. " alt="" coords="404,825,619,852"/>
-<area shape="rect" id="node30" href="$classSistemaLinf.html#a4bcddb736d984cad7feb2d0b16f91d34" title="Mensagem padrão para entrada inválida. " alt="" coords="678,724,863,751"/>
-<area shape="rect" id="node31" href="$classSistemaLinf.html#a17d5c1f1114a1ed28e17775c134351eb" title="Acessa área de modificação de dados pessoais. " alt="" coords="425,691,597,733"/>
-<area shape="rect" id="node22" href="$classSistemaLinf.html#aa826b0cb1de2201bbb8ee2e9fcae7d48" title="Imprime na tela resultado da consulta de reservas. " alt="" coords="923,876,1127,903"/>
-<area shape="rect" id="node23" href="$classGerenteBD.html#ac4a3132cc8f79fd3472358378c1cfe0c" title="Busca registros de reserva de acordo com o campo utilizado como critério de busca. ..." alt="" coords="936,977,1113,1004"/>
-<area shape="rect" id="node25" href="$classSistemaLinf.html#a0414bcc2e81953f87acbb3ca80aab9ab" title="Faz requisição para reserva de laboratório. " alt="" coords="683,927,859,953"/>
-<area shape="rect" id="node27" href="$classSistemaLinf.html#ac4312005ce0674d918f89b22836a92ee" title="Faz requisição para cancelamento de reserva. " alt="" coords="669,1028,872,1055"/>
-<area shape="rect" id="node29" href="$classGerenteBD.html#a4ddc8a64d951a32cc19327ce99bdc1a8" title="Executa as modificações sobre reserva na base de dados. " alt="" coords="678,825,863,852"/>
-<area shape="rect" id="node24" href="$classGerenteBD.html#ad0207347ebe1fc29ebfd11cec64e5211" title="Verifica se a data informada possui reservas. " alt="" coords="1175,952,1369,979"/>
-<area shape="rect" id="node26" href="$classGerenteBD.html#a34f72b9c2114723a55c4582a73ce0afa" title="Salva um novo registro de reserva. " alt="" coords="937,927,1112,953"/>
-<area shape="rect" id="node28" href="$classGerenteBD.html#a617821afeeda144f2ab7632dd5357d47" title="Cancela uma reserva. " alt="" coords="931,1028,1118,1055"/>
+<area shape="rect" id="node2" href="$classSistemaLinf.html#aaeba3f1f325e36dfc8718e1e5eee5e86" title="Responsavel por resolver o login do usuÃ¡rio. " alt="" coords="182,673,357,699"/>
+<area shape="rect" id="node13" href="$classUsuario.html#a51b15e0008a5fa1d0da0da509aa1701e" title="Getter do atributo matricula. " alt="" coords="965,869,1114,895"/>
+<area shape="rect" id="node24" href="$classSistemaLinf.html#a2b7a8bb723dfee53ce46e2ddfc170ad5" title="Fornece os principais conjuntos de operaÃ§Ãµes possiveis no sistema. " alt="" coords="176,1029,363,1055"/>
+<area shape="rect" id="node3" href="$classSistemaLinf.html#ae02bf5d72ed634c919512e8c80f8ca28" title="Limpa os caracteres da tela. " alt="" coords="956,818,1123,845"/>
+<area shape="rect" id="node4" href="$classGerenteLogin.html#a5abe6312f068245a8757f46005f85faf" title="Gera a instÃ¢ncia do usuÃ¡rio que navega no sistema. " alt="" coords="437,295,603,322"/>
+<area shape="rect" id="node12" href="$classUsuario.html#a392412fa31482a0a56fbca53d1f0bbb0" title="Setter do atributo nome. " alt="" coords="974,186,1105,213"/>
+<area shape="rect" id="node18" href="$GerenteLogin_8h.html#ae21f0e04b10740251ce9a20c2532877d" title="FunÃ§Ã£o global para atraso de 3 segundos na tela. " alt="" coords="1003,1021,1076,1047"/>
+<area shape="rect" id="node19" href="$classGerenteLogin.html#a94bdb9e213ffdc0aa3219dad300801cb" title="Gera uma instÃ¢ncia de usuÃ¡rio. " alt="" coords="429,578,611,605"/>
+<area shape="rect" id="node5" href="$classUsuario.html#a172eab6b5e1cdd16bcf87c1ffec86917" title="Setter do atributo senha. " alt="" coords="973,397,1105,423"/>
+<area shape="rect" id="node6" href="$classGerenteBD.html#ae5b9e1254a70db28a14118a9cb7bbabb" title="Verifica a existencia de usuario. " alt="" coords="693,143,871,170"/>
+<area shape="rect" id="node7" href="$classGerenteLogin.html#a76770a88d060e2ccd461a743db71fab8" title="Faz a verificaÃ§Ã£o de usuÃ¡rio via webcam. " alt="" coords="677,549,887,575"/>
+<area shape="rect" id="node10" href="$classGerenteBD.html#aee848e57a172b20998ada945c2d8f66a" title="Busca um usuÃ¡rio no banco de dados. " alt="" coords="693,397,871,423"/>
+<area shape="rect" id="node14" href="$classUsuario.html#a39534698541ca25dca335aa79ef6e42f" title="Getter do atributo nome. " alt="" coords="974,767,1105,794"/>
+<area shape="rect" id="node15" href="$classGerenteLogin.html#a65ea8467da7e3d2edb7cdde06b057c4a" title="Oculta characters digitados. " alt="" coords="691,245,873,271"/>
+<area shape="rect" id="node16" href="$classGerenteBD.html#a83307478b300f18ad530bbae7a21c5cb" title="Verifica se a matricula confere com a senha. " alt="" coords="693,295,871,322"/>
+<area shape="rect" id="node17" href="$classGerenteLogin.html#a7ba85f5a3c41ce38e996b60d2ef4eb73" title="GerenteLogin::_AtualizaBanco\lDeFotos" alt="" coords="683,77,881,119"/>
+<area shape="rect" id="node8" href="$GerenteLogin_8cpp.html#a6079220416e9a40882f29520856d6049" title="FunÃ§Ã£o global para atraso de 3 segundos na tela. " alt="" coords="1003,607,1076,634"/>
+<area shape="rect" id="node9" href="$classGerenteLogin.html#ad47c6f8aa06063a5ae3085b6b4955c1e" title="Cria arquivo de identificaÃ§Ã£o do banco de fotos. " alt="" coords="956,549,1123,575"/>
+<area shape="rect" id="node11" href="$classUsuario.html#a120e068856b0e0a9e0db6e5a7e3c8555" title="Setter do atributo matricula. " alt="" coords="965,473,1113,499"/>
+<area shape="rect" id="node20" href="$classGerenteBD.html#a63f7f9bfe46b46806b21d5df2a8f34f0" title="Insere um novo usuÃ¡rio no banco de dados. " alt="" coords="694,717,870,743"/>
+<area shape="rect" id="node23" href="$classGerenteLogin.html#a222cc10fd8074cdc42765303a0190549" title="Faz a captura de novas fotos do usuÃ¡rio via webcam. " alt="" coords="695,651,869,692"/>
+<area shape="rect" id="node21" href="$classUsuario.html#a364e3001148916047ee9f74f46b89c67" title="Getter do atributo senha. " alt="" coords="973,666,1106,693"/>
+<area shape="rect" id="node22" href="$classGerenteBD.html#a1d0efdc4bad2f2224eba2b2214477a7d" title="Executa as modificaÃ§Ãµes sobre usuÃ¡rio na base de dados. " alt="" coords="946,717,1133,743"/>
+<area shape="rect" id="node25" href="$classSistemaLinf.html#a8a6ab1c1b404f58739b2c99ef6ae95d2" title="Gera o cabeÃ§alho principal do sistema. " alt="" coords="698,970,866,997"/>
+<area shape="rect" id="node26" href="$classSistemaLinf.html#a349a48f688ee38225cfbdd0c30484a03" title="Acessa a Ã¡rea de reserva de salas do laboratÃ³rio. " alt="" coords="411,1138,629,1165"/>
+<area shape="rect" id="node35" href="$classSistemaLinf.html#a4bcddb736d984cad7feb2d0b16f91d34" title="Mensagem padrÃ£o para entrada invÃ¡lida. " alt="" coords="687,1021,877,1047"/>
+<area shape="rect" id="node36" href="$classSistemaLinf.html#a17d5c1f1114a1ed28e17775c134351eb" title="Acessa Ã¡rea de modificaÃ§Ã£o de dados pessoais. " alt="" coords="433,1021,607,1063"/>
+<area shape="rect" id="node27" href="$classSistemaLinf.html#aa826b0cb1de2201bbb8ee2e9fcae7d48" title="Imprime na tela resultado da consulta de reservas. " alt="" coords="935,1223,1144,1250"/>
+<area shape="rect" id="node28" href="$classGerenteBD.html#ac4a3132cc8f79fd3472358378c1cfe0c" title="Busca registros de reserva de acordo com o campo utilizado como critÃ©rio de busca. " alt="" coords="949,1173,1130,1199"/>
+<area shape="rect" id="node30" href="$classSistemaLinf.html#a0414bcc2e81953f87acbb3ca80aab9ab" title="Faz requisiÃ§Ã£o para reserva de laboratÃ³rio. " alt="" coords="692,1122,872,1149"/>
+<area shape="rect" id="node32" href="$classSistemaLinf.html#ac4312005ce0674d918f89b22836a92ee" title="Faz requisiÃ§Ã£o para cancelamento de reserva. " alt="" coords="679,1274,885,1301"/>
+<area shape="rect" id="node34" href="$classGerenteBD.html#a4ddc8a64d951a32cc19327ce99bdc1a8" title="Executa as modificaÃ§Ãµes sobre reserva na base de dados. " alt="" coords="687,1325,877,1351"/>
+<area shape="rect" id="node29" href="$classGerenteBD.html#ad0207347ebe1fc29ebfd11cec64e5211" title="Verifica se a data informada possui reservas. " alt="" coords="1192,1147,1392,1174"/>
+<area shape="rect" id="node31" href="$classGerenteBD.html#a34f72b9c2114723a55c4582a73ce0afa" title="Salva um novo registro de reserva. " alt="" coords="949,1122,1129,1149"/>
+<area shape="rect" id="node33" href="$classGerenteBD.html#a617821afeeda144f2ab7632dd5357d47" title="Cancela uma reserva. " alt="" coords="943,1274,1135,1301"/>
 </map>

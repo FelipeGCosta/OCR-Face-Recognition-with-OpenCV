@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['laboratorio',['laboratorio',['../classReserva.html#aa099427aa758d5b0dd0c8df5bd2ac963',1,'Reserva']]]
+  ['gbd',['GBD',['../classSistemaLinf.html#aa933d8319c201547026b90df75800846',1,'SistemaLinf']]],
+  ['glog',['GLog',['../classSistemaLinf.html#a142cf46cfe4daf401138840502b209ab',1,'SistemaLinf']]]
 ];

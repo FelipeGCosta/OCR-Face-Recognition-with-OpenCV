@@ -3,8 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.13"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
 <title>Trabalho 2 - TP1: projetoTP1_2</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -12,6 +11,9 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,19 +31,34 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Gerado por Doxygen 1.8.13 -->
+<!-- Gerado por Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-$(function() {
-  initMenu('',true,false,'search.php','Localizar');
-  $(document).ready(function() { init_search(); });
-});
-</script>
-<div id="main-nav"></div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -108,56 +125,56 @@ $(function() {
 <h2>Build e Compilation</h2>
 <p>Baixe o <a href="https://cmake.org/download/">CMake</a> para a portabilidade do seu projeto após verificar o tipo de sistema de sua máquina e extraia os arquivos. Após a extração encontre o diretório binário do CMake e execute o programa cmake-gui. Após isso insira o caminho dos arquivos de código na primeira entrada e na segunda insira o caminho que irá ser armazenados os arquivos build do CMake. Clique em Configure e depois que nenhum erro for relatado, você pode clicar no botão Generate. E seu trabalho estará pronto.</p>
 <p>CMakeLists:</p>
-<div class="fragment"><div class="line">cmake_minimum_required (VERSION 2.6)</div><div class="line">project (tp1.2)</div><div class="line">add_executable(tp1.2 tp1.cpp)</div></div><!-- fragment --><p>Linha de comando utilizada:</p>
-<div class="fragment"><div class="line">cmake .</div></div><!-- fragment --><h2>Diagrama Casos de uso</h2>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cmake_minimum_required (VERSION 2.6)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;project (tp1.2)</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;add_executable(tp1.2 tp1.cpp)</div></div><!-- fragment --><p>Linha de comando utilizada:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cmake .</div></div><!-- fragment --><h2>Diagrama Casos de uso</h2>
 <p>Esse diagrama foi feito pensando nos principais atores presentes no laboratório. É também uma ideia inicial de modelagem do banco de dados.</p>
 <div class="image">
-<img src="imagens/diagrama_casos_de_uso.png" alt="Diagrama de casos de uso"/>
+<img src="imagens/diagrama_casos_de_uso.png"  alt="Diagrama de casos de uso"/>
 </div>
 <p>Fonte:</p>
 <p><a href="https://yuml.me/diagram/scruffy/usecase/samples">https://yuml.me/diagram/scruffy/usecase/samples</a></p>
-<div class="fragment"><div class="line">[Professor]-(Reservar laboratório)</div><div class="line">[Professor]-(Acessar laboratório)</div><div class="line">[Professor]-(Criar cadastro de acesso)</div><div class="line">[Aluno]-(Criar cadastro de acesso)</div><div class="line">[Aluno]-(Acessar laboratório)</div><div class="line">[Funcionário]-(Criar cadastro de acesso)</div><div class="line">[Funcionário]-(Acessar laboratório)</div><div class="line">[Funcionário]-(Modificar cadastro de acesso)</div><div class="line">[Funcionário]-(Excluir cadastro de acesso)</div></div><!-- fragment --><h2>Diagrama de Atividades</h2>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;[Professor]-(Reservar laboratório)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;[Professor]-(Acessar laboratório)</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;[Professor]-(Criar cadastro de acesso)</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;[Aluno]-(Criar cadastro de acesso)</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;[Aluno]-(Acessar laboratório)</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;[Funcionário]-(Criar cadastro de acesso)</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;[Funcionário]-(Acessar laboratório)</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;[Funcionário]-(Modificar cadastro de acesso)</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;[Funcionário]-(Excluir cadastro de acesso)</div></div><!-- fragment --><h2>Diagrama de Atividades</h2>
 <p>Descreve o parte do sistema de reconhecimento de faces para permitir a entrada ou cadastrar uma pessoa no linf.</p>
 <div class="image">
-<img src="imagens/diagrama_atividade.png" alt="Diagrama de atividades"/>
+<img src="imagens/diagrama_atividade.png"  alt="Diagrama de atividades"/>
 </div>
 <p>Fonte:</p>
 <p><a href="https://yuml.me/diagram/nofunky/activity/samples">https://yuml.me/diagram/nofunky/activity/samples</a></p>
-<div class="fragment"><div class="line">(start)-&gt;(Reconhecer_Face)-&gt;&lt;a&gt;[Ok]-&gt;(Permite_Acesso_Linf),</div><div class="line">&lt;a&gt;[Nao_identificado]-&gt;(Digita_login_senha)-&gt;(Atualiza_Cadastro)-&gt;(Permite_Acesso_Linf)-&gt;(end)</div></div><!-- fragment --><h2>Diagram de Sequência</h2>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;(start)-&gt;(Reconhecer_Face)-&gt;&lt;a&gt;[Ok]-&gt;(Permite_Acesso_Linf),</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;a&gt;[Nao_identificado]-&gt;(Digita_login_senha)-&gt;(Atualiza_Cadastro)-&gt;(Permite_Acesso_Linf)-&gt;(end)</div></div><!-- fragment --><h2>Diagram de Sequência</h2>
 <p>Primeiro diagrama de sequência</p>
 <div class="image">
-<img src="imagens/diagrama_sequencia.png" alt="Diagrama de sequencia"/>
+<img src="imagens/diagrama_sequencia.png"  alt="Diagrama de sequencia"/>
 </div>
 <p>Fonte:</p>
 <p><a href="https://www.websequencediagrams.com/">https://www.websequencediagrams.com/</a></p>
-<div class="fragment"><div class="line">title Sistema Trabalho 2</div><div class="line">User-&gt;SGBD: informar número de matrícula</div><div class="line">alt Matrícula encontrada</div><div class="line">    SGBD-&gt;SYSTEM: retorna fotos do User</div><div class="line">    User-&gt;SYSTEM: captura uma foto</div><div class="line">    SYSTEM-&gt;User: reconhece foto</div><div class="line">    alt foto Não reconhecida</div><div class="line">        User-&gt;SYSTEM: captura foto</div><div class="line">        SYSTEM-&gt;SGBD: armazena nova foto</div><div class="line">    end</div><div class="line">else Matrícula não encontrada</div><div class="line">    SGBD-&gt;User: cadastrar_User()</div><div class="line">    User-&gt;SGBD: informa dados()</div><div class="line">    User-&gt;SYSTEM: captura fotos()</div><div class="line">    SYSTEM-&gt;SGBD: armazena fotos()</div><div class="line">end</div><div class="line">SYSTEM-&gt;User: Validar User</div></div><!-- fragment --><h2>Diagrama de Classes</h2>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;title Sistema Trabalho 2</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;User-&gt;SGBD: informar número de matrícula</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;alt Matrícula encontrada</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    SGBD-&gt;SYSTEM: retorna fotos do User</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    User-&gt;SYSTEM: captura uma foto</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    SYSTEM-&gt;User: reconhece foto</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    alt foto Não reconhecida</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        User-&gt;SYSTEM: captura foto</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        SYSTEM-&gt;SGBD: armazena nova foto</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    end</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;else Matrícula não encontrada</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    SGBD-&gt;User: cadastrar_User()</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    User-&gt;SGBD: informa dados()</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    User-&gt;SYSTEM: captura fotos()</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    SYSTEM-&gt;SGBD: armazena fotos()</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;end</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;SYSTEM-&gt;User: Validar User</div></div><!-- fragment --><h2>Diagrama de Classes</h2>
 <p>Primeiro diagrama de classes</p>
 <div class="image">
-<img src="imagens/diagrama_simplificado_de_classes.png" alt="diagrama simplificado de classes"/>
+<img src="imagens/diagrama_simplificado_de_classes.png"  alt="diagrama simplificado de classes"/>
 </div>
 <h2>Diagrama de Sequência</h2>
 <div class="image">
-<img src="imagens/diagram.png" alt="diagrama sequencia"/>
+<img src="imagens/diagram.png"  alt="diagrama sequencia"/>
 </div>
 <h2>Screenshots</h2>
 <ul>
 <li><div class="image">
-<img src="imagens/ss.png" alt="ss"/>
+<img src="imagens/ss.png"  alt="ss"/>
 </div>
 <br />
 </li>
 <li><div class="image">
-<img src="imagens/ss2.png" alt="ss2"/>
+<img src="imagens/ss2.png"  alt="ss2"/>
 </div>
 <br />
 </li>
 <li><div class="image">
-<img src="imagens/ss3.png" alt="ss3"/>
+<img src="imagens/ss3.png"  alt="ss3"/>
 </div>
 <br />
 </li>
 <li><div class="image">
-<img src="imagens/ss4.png" alt="ss4"/>
+<img src="imagens/ss4.png"  alt="ss4"/>
 </div>
  </li>
 </ul>
@@ -166,7 +183,7 @@ $(function() {
 <hr class="footer"/><address class="footer"><small>
 Gerado por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
+</a> 1.8.11
 </small></address>
 </body>
 </html>
